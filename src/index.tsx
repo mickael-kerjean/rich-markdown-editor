@@ -58,7 +58,6 @@ import BlockMenuTrigger from "./plugins/BlockMenuTrigger";
 import History from "./plugins/History";
 import Keys from "./plugins/Keys";
 import Placeholder from "./plugins/Placeholder";
-import SmartText from "./plugins/SmartText";
 import TrailingNode from "./plugins/TrailingNode";
 import MarkdownPaste from "./plugins/MarkdownPaste";
 
@@ -240,7 +239,6 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
         new Strikethrough(),
         new OrderedList(),
         new History(),
-        new SmartText(),
         new TrailingNode(),
         new MarkdownPaste(),
         new Keys({
