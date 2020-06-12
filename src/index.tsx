@@ -44,6 +44,7 @@ import Table from "./nodes/Table";
 import TableCell from "./nodes/TableCell";
 import TableHeadCell from "./nodes/TableHeadCell";
 import TableRow from "./nodes/TableRow";
+import LineBreak from "./nodes/LineBreak";
 
 // marks
 import Bold from "./marks/Bold";
@@ -212,6 +213,7 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
           onShowToast: this.props.onShowToast,
           offset: this.props.headingsOffset,
         }),
+        new LineBreak(),
         new HorizontalRule(),
         new Image({
           uploadImage: this.props.uploadImage,
