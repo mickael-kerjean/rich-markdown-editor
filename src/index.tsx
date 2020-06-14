@@ -33,6 +33,7 @@ import CodeBlock from "./nodes/CodeBlock";
 import CodeFence from "./nodes/CodeFence";
 import CheckboxList from "./nodes/CheckboxList";
 import CheckboxItem from "./nodes/CheckboxItem";
+import FrontMatter from "./nodes/FrontMatter";
 import Embed from "./nodes/Embed";
 import Heading from "./nodes/Heading";
 import HorizontalRule from "./nodes/HorizontalRule";
@@ -211,6 +212,7 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
         new CheckboxItem(),
         new Embed(),
         new ListItem(),
+        new FrontMatter(),
         new Heading({
           onShowToast: this.props.onShowToast,
           offset: this.props.headingsOffset,

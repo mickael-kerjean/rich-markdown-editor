@@ -1,5 +1,6 @@
 import markdownit from "markdown-it";
 import markPlugin from "markdown-it-mark";
+import frontMatterPlugin from "./frontMatter";
 import checkboxPlugin from "./checkboxes";
 import embedsPlugin from "./embeds";
 import breakPlugin from "./breaks";
@@ -14,5 +15,6 @@ export default function rules({ embeds }) {
     .use(breakPlugin)
     .use(checkboxPlugin)
     .use(markPlugin)
+    .use(frontMatterPlugin)
     .use(tablesPlugin);
 }

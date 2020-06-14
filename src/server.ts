@@ -21,6 +21,7 @@ import Table from "./nodes/Table";
 import TableCell from "./nodes/TableCell";
 import TableHeadCell from "./nodes/TableHeadCell";
 import TableRow from "./nodes/TableRow";
+import FrontMatter from "./nodes/FrontMatter";
 
 // marks
 import Bold from "./marks/Bold";
@@ -42,6 +43,7 @@ const extensions = new ExtensionManager([
   new CheckboxItem(),
   new Embed(),
   new ListItem(),
+  new FrontMatter(),
   new Heading(),
   new HorizontalRule(),
   new Image(),
