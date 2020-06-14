@@ -62,6 +62,8 @@ import Placeholder from "./plugins/Placeholder";
 import TrailingNode from "./plugins/TrailingNode";
 import MarkdownPaste from "./plugins/MarkdownPaste";
 
+import "regenerator-runtime/runtime.js";
+
 export { schema, parser, serializer } from "./server";
 
 export { default as Extension } from "./lib/Extension";
