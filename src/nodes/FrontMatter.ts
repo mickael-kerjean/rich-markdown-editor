@@ -35,11 +35,7 @@ export default class FrontMatter extends Node {
   }
 
   toMarkdown(state, node) {
-    state.write("---");
-    state.ensureNewLine();
     state.text(node.textContent, false);
-    state.ensureNewLine();
-    state.write("---");
     state.closeBlock(node);
   }
 
