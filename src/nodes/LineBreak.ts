@@ -20,13 +20,14 @@ export default class LineBreak extends Node {
   keys({ type }) {
     return {
       "Shift-Enter": (state, dispatch) => {
+        console.log(state)
         dispatch(state.tr.replaceSelectionWith(type.create()).scrollIntoView());
       }
     }
   }
 
   toMarkdown(state, node){
-    state.write("<br>");
+    state.write("\n");
   }
 
   get markdownToken() {
